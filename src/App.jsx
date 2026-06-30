@@ -7,6 +7,7 @@ const APP_TITLE = "専門医試験対策アプリ";
 const ROUND_LABEL = "回"; // 例: 第1回 → ROUND_LABEL = "回"
 const ROUND_TAB_NAME = "回別";
 const CATEGORY_TAB_NAME = "分野別";
+const VIDEO_CHANNEL_URL = "https://www.youtube.com/@精神科専門医対策CH";
 
 // ============================================================
 // 問題データ
@@ -5468,8 +5469,17 @@ function Home({
 
   return (
     <div className="max-w-lg mx-auto px-4 pt-6 pb-28">
-      <header className="mb-5">
+      <header className="mb-5 flex items-center justify-between gap-3">
         <h1 className="text-xl font-black text-slate-100">{APP_TITLE}</h1>
+        <a
+          href={VIDEO_CHANNEL_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-shrink-0 flex items-center gap-1.5 rounded-full border border-rose-500/40 bg-rose-500/10 px-3 py-1.5 text-xs font-semibold text-rose-300 hover:bg-rose-500/20 active:scale-95 transition-all"
+        >
+          <span className="text-sm leading-none">📺</span>
+          動画解説ch
+        </a>
       </header>
 
       <div className="flex gap-3 mb-5">
